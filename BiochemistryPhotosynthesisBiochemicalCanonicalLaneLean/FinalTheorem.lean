@@ -1,0 +1,19 @@
+import BiochemistryPhotosynthesisBiochemicalCanonicalLaneLean.BiochemistryAdmissibleClass
+import BiochemistryPhotosynthesisBiochemicalCanonicalLaneLean.LightReactionsPackage
+import BiochemistryPhotosynthesisBiochemicalCanonicalLaneLean.CalvinCyclePackage
+import canonicalLaneMathlib.BridgeLemmas
+import canonicalLaneMathlib.GateLemmas
+
+namespace HautevilleHouse
+namespace BiochemistryPhotosynthesisBiochemicalCanonicalLaneLean
+
+open HautevilleHouse.CanonicalLaneMathlibCore
+
+def ConstrainedPhotosynthesisClosure (A : PhotosynthesisAdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_photosynthesis_endgame (A : PhotosynthesisAdmissibleClass) : ConstrainedPhotosynthesisClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end BiochemistryPhotosynthesisBiochemicalCanonicalLaneLean
+end HautevilleHouse
